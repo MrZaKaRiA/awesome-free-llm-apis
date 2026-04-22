@@ -1,24 +1,24 @@
-<div align="center">
-	<br>
-	<img src="media/awesome-free-llm-apis.png" width="500" alt="Awesome Free LLM APIs">
-	<br>
-	<br>
+<h1 align="center">
+	<a href="https://github.com/mnfst/awesome-free-llm-apis">
+		<img src="media/awesome-free-llm-apis.png" width="500" alt="Awesome Free LLM APIs">
+	</a>
+</h1>
+
+<p align="center">
 	<a href="https://awesome.re">
 		<img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
 	</a>
-	<br>
-	<br>
-	<p>LLM APIs with permanent free tiers for text inference.</p>
-	<br>
-	<br>
-</div>
+</p>
+
+<p align="center">LLM APIs with permanent free tiers for text inference.</p>
+
+<p align="center"><sub>All endpoints are OpenAI SDK-compatible unless noted. Each link points to the provider's API key page.</sub></p>
 
 ## Contents
 
 - [Provider APIs](#provider-apis)
 - [Inference providers](#inference-providers)
 - [Glossary](#glossary)
-- [Notes](#notes)
 
 ## Provider APIs
 
@@ -282,10 +282,6 @@ Base URL: `https://api.siliconflow.cn/v1`
 | deepseek-ai/DeepSeek-OCR                | —       | 8K           | Vision (OCR)       | 1,000 RPM, 50K TPM |
 | + embedding/speech models               | Varies  | Varies       | Embeddings, Speech | 1,000 RPM, 50K TPM |
 
-## Contributing
-
-Know a free tier that's missing? [Open a PR](contributing.md). Include the provider, endpoint, rate limits (link to their docs), and a few notable models. Trial credits and time-limited promos don't count.
-
 ## Glossary
 
 | Abbreviation | Meaning             |
@@ -296,10 +292,9 @@ Know a free tier that's missing? [Open a PR](contributing.md). Include the provi
 | **TPD**      | Tokens per day      |
 | **RPS**      | Requests per second |
 
-## Notes
+## Contributing
 
-- All endpoints are OpenAI SDK-compatible unless noted.
-- Each link points to the provider's API key page.
+Know a free tier that's missing? [Open a PR](contributing.md). Include the provider, endpoint, rate limits (link to their docs), and a few notable models. Trial credits and time-limited promos don't count.
 
 [^1]: Free tier not available in the EU, UK, or Switzerland ([available regions](https://ai.google.dev/gemini-api/docs/available-regions)).
 [^2]: Groq rate limits vary by model. Llama 4 Maverick is limited to 500 RPD. Most other models get 14,400 RPD ([rate limits](https://console.groq.com/docs/rate-limits)).

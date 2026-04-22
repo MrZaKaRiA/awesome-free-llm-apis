@@ -7,20 +7,21 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data.json'), 'utf8'));
 
-const HEADER = `<div align="center">
-\t<br>
-\t<img src="media/awesome-free-llm-apis.png" width="500" alt="Awesome Free LLM APIs">
-\t<br>
-\t<br>
+const HEADER = `<h1 align="center">
+\t<a href="https://github.com/mnfst/awesome-free-llm-apis">
+\t\t<img src="media/awesome-free-llm-apis.png" width="500" alt="Awesome Free LLM APIs">
+\t</a>
+</h1>
+
+<p align="center">
 \t<a href="https://awesome.re">
 \t\t<img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
 \t</a>
-\t<br>
-\t<br>
-\t<p>LLM APIs with permanent free tiers for text inference.</p>
-\t<br>
-\t<br>
-</div>`;
+</p>
+
+<p align="center">LLM APIs with permanent free tiers for text inference.</p>
+
+<p align="center"><sub>All endpoints are OpenAI SDK-compatible unless noted. Each link points to the provider's API key page.</sub></p>`;
 
 function alignTable(header, rows) {
 	const widths = header.map((cell, i) => {
@@ -81,7 +82,6 @@ const parts = [
 	'- [Provider APIs](#provider-apis)',
 	'- [Inference providers](#inference-providers)',
 	'- [Glossary](#glossary)',
-	'- [Notes](#notes)',
 	'',
 	'## Provider APIs',
 	'',
@@ -95,18 +95,13 @@ const parts = [
 	'',
 	inferenceProviders.map(buildProviderSection).join('\n\n'),
 	'',
-	'## Contributing',
-	'',
-	'Know a free tier that\'s missing? [Open a PR](contributing.md). Include the provider, endpoint, rate limits (link to their docs), and a few notable models. Trial credits and time-limited promos don\'t count.',
-	'',
 	'## Glossary',
 	'',
 	glossaryTable,
 	'',
-	'## Notes',
+	'## Contributing',
 	'',
-	'- All endpoints are OpenAI SDK-compatible unless noted.',
-	'- Each link points to the provider\'s API key page.',
+	'Know a free tier that\'s missing? [Open a PR](contributing.md). Include the provider, endpoint, rate limits (link to their docs), and a few notable models. Trial credits and time-limited promos don\'t count.',
 	'',
 	footnoteLines,
 	'',
